@@ -1,0 +1,10 @@
+net localgroup Jméno /add
+
+uživ.txt
+Jméno příj heslo Admin
+
+1) Načíst oprávnění
+2) Vytvořit skupiny
+3) Načíst uživatele
+4) Vytvořit uživatele
+5) Přiřadit uživatele do skupiny
