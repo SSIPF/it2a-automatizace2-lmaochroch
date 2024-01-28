@@ -1,5 +1,7 @@
 net localgroup Jméno /add
 
+net localgroup groupname username /add
+
 uživ.txt
 Jméno příj heslo Admin
 
