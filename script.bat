@@ -15,13 +15,13 @@ if not (%1)==() goto parameters
 FOR /F "tokens=*" %%i IN (%fileUsername%) DO call :vytvoreni %%i %passwrd%
 
 :vytvoreni
-net localgroup %3 /add
-net user %4 %1 /fullname:"%1 %2" %3 /add
+net localgroup %4 /add
+net user %1 /fullname:"%1 %2" %3 /add
 
-FOR /F "tokens=*" %%i IN (%fileUsername%) DO call :pridani %%I
+FOR /F "tokens=*" %%i IN (%fileUsername%) DO call :pridani %%i
 
 :pridani
-net localgroup %1 %3 /add
+net localgroup %4 %1 /add
 
 goto END
 
